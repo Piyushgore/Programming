@@ -14,8 +14,18 @@ typedef struct node ** PPNODE;
 
 int main()
 {
-    NODE obj;
+    PNODE newn = NULL;
 
-    cout<<sizeof(obj)<<endl;
+  // newn = (PNODE)malloc(sizeof(NODE))
+    newn = new NODE;
+
+    newn->data = 11;
+    newn->next = NULL;
+
+    cout<<newn->data<<endl;
+
+  // free(newn);
+    delete newn;
+
     return 0;
 }

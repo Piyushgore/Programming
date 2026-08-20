@@ -12,10 +12,20 @@ typedef struct node NODE;
 typedef struct node * PNODE;
 typedef struct node ** PPNODE;
 
+class SinglyLL
+{
+    public:
+        PNODE first;
+
+        SinglyLL()
+        {
+            cout<<"Inside Constructor\n";
+            this->first = NULL;
+        }
+};
 int main()
 {
-    NODE obj;
+    SinglyLL sobj;    
 
-    cout<<sizeof(obj)<<endl;
     return 0;
 }
